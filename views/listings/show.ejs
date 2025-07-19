@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<% layout('./layouts/boilerplate') -%>
+
 <body>
-    <h1>Listing All Info</h1>
-    <br><hr>
+    <div class="row">
+        <div class="col offset-2">
+            <h1><i><b>INFORMATION'S</b></i></h1>
+            <hr>
+    <img src="<%= listings.image.url %>" alt="" class="ShowImg mb-3">
+    <h1><b><%= listings.title %></b></h1>
+    <p style="width: 45rem "><%= listings.description %></p>
+    <p>MRP: &#8377; <%= listings.price.toLocaleString("en-IN") %>/NIGHT</p>
+    <div class="details">
+        <p>Location: <%= listings.location %></p>
+        <p>Country: <%= listings.country %></p>
+    </div>
     <br>
-    <ul>
-        <li>Title: <%= listings.title %></li>
-        <li>Description: <%= listings.description %></li>
-        <li>Price: <%= listings.price.toLocaleString("en-IN") %></li>
-        <li>Location: <%= listings.location %></li>
-        <li>Country: <%= listings.country %></li>
-        <li>Image Name: <%= listings.image.filename %></li>
-    </ul>
-    <br>
-    <form action="/listings/<%=listings._id%>/edit" method="get">
-        <button>Edit</button>
+    <div class="showbtns">
+        <form action="/listings/<%=listings._id%>/edit" method="get">
+        <button class="btn btn-dark createbtn">Edit</button>
     </form>
-    <br>
     <form action="/listings/<%= listings._id %>?_method=DELETE" method="POST" onsubmit="return confirmDelete()">
-    <button type="submit">DELETE</button>
+    <button type="submit" class="btn btn-dark createbtn">DELETE</button>
 </form>
+<br><br><br>
+    </div>
+        </div>
+    </div>
 
 <script>
     function confirmDelete() {
@@ -34,4 +34,3 @@
 
     
 </body>
-</html>

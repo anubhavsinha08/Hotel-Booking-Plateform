@@ -1,0 +1,125 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+}
+.fa-think-peaks{
+    color: orangered;
+    font-size: 2rem;
+}
+.nav-link{
+    color: black !important;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    color: #484848;
+    border-top: 1px solid #e4e4e4;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.f-info-socials i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #484848;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.f-info-socials i:hover {
+    color: #ff385c;
+}
+
+.f-info-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #484848;
+    transition: color 0.3s ease;
+}
+
+.f-info-links a:hover {
+    color: #ff385c;
+}
+
+.f-info-brand {
+    flex: 1 1 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* listing route */
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card-img-top{
+    border-radius: 1rem;
+    width: 100% !important;
+    object-fit: cover !important;
+    /* z-index: 1000; */
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.listings-link{
+    text-decoration: none;
+}
+
+/* overlay */
+.card-img-overlay{
+    opacity: 0;
+    backdrop-filter: blur(0.1rem);
+    height: 20rem;
+    border-radius:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img-overlay:hover{
+    opacity: 10;
+    /* background-color: #e4e4e4; */
+}
+/* new route */
+.createbtn{
+    background-color:orangered !important;
+    border: none !important;
+}
+/* show route */
+.ShowImg{
+    width: 45vw;
+    height: 40vh;
+    border-radius: 1rem;
+}
+.showbtns{
+    display: flex;
+}
+
+.showbtns form{
+    margin-right: 2rem;
+}
