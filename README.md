@@ -1,5 +1,5 @@
-# Airbnb-Clone
-Airbnb clone to implement my skills till now and help to revise backend and database
+# Hotel-Booking Plateform
+hotel booking website to implement my skills till now and help to revise backend and database
 
 
 
